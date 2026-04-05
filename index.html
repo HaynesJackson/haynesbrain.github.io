@@ -17,27 +17,81 @@
         h1 {
             font-size: 18pt;
             margin-bottom: 0.25rem;
+            color: #ffffff;
             }
         h2 {
             font-size: 15pt;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
             margin-top: 3rem;
-            border-bottom; 2px solid #222;
+            border-bottom: 2px solid #222;
             padding-bottom: 0.5rem;
             }
         p {
             line-height:1.7;
-            color: black;
+            color: #aaaaaa;
             }
         .project {
-            background: white;
-            border 1px inset;
-            border-image: linear-gradient(to right, black, silver);
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-left: 3px solid #ffffff;
             border-radius: 5px;
-            padding: 1rem 1.5rem;
+            padding: 1.25rem 1.5rem;
+            margin-top: 1.25rem;
+            }
+        .project h3 {
+            margin: 0 0 0.5rem 0;
+            color: #ffffff;
+            font-size: 1rem;
+            }
+        .project p {
+            margin: 0;
+            font-size: 0.9rem;
+            }
+        .project a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: #888;
+            font-size: 0.85rem;
+            text-decoration: none;
+            }
+        .project a:hover {
+            color: #ffffff;
+            }
+        .subtitle {
+            color: #888;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            }
+        .resume {
+            display: inline-block;
             margin-top: 1rem;
+            padding: 0.6rem 1.25rem;
+            background: #ffffff;
+            color: #0d0d0d;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            }
+        .resume:hover {
+            background: #cccccc;
             }
 
 
+        .nav {
+            margin-bottom: 4rem;
+            }
+        .nav a {
+            color: #888;
+            text-decoration: none;
+            margin-right: 1.75rem;
+            font-size: 0.9rem;
+            }
+        .nav a:hover{
+            color: #ffffff;
+        }
 
     </style>
 </head>
@@ -45,11 +99,23 @@
 <body>
 
     <h1>Jackson Haynes</h1>
-    <p>Hi, I am Jackson Haynes.</p>
+    <p class="subtitle">Honors Computer Science Student - Option in Cybersecurity</p>
+    <p class='subtitle'>Oregon State University, Class of 2028</p>
 
-    <h2>About Jackson</h2>
+    <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+    </nav>
+
+    <h2 id="about">About</h2>
     <p>
-        Hello, I am a computer scientist.
+        Hello, I am a computer scientist at Oregon State Uni. in Corvallis, OR.
+        I am involved in multiple clubs at OSU, including DAMSEC (Cybersecurity), 
+        Badminton Club, and ACM. Currently, I am a research asssistant working under
+        a professor for the development of his new book; some of my tasks include
+        weekly summarizations of the recent technological developments in the world,
+        and building an online platform to share his book. 
     </p>
 
     <h2>Projects</h2>
